@@ -54,7 +54,7 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("../images/digital-marketing-meeting.jpg"); /* To be fixed - Convert from background to an img */
     background-size: cover;
     background-position: center;
 }
@@ -83,7 +83,7 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #2589bd; /* To be fixed - Insufficient Color Contrast with white text */
 }
 
 .benefit-lead {
