@@ -1,9 +1,14 @@
 :root {
-    --c-primary: #285C76;
+    /* Brand Colors */
+    --c-primary: #285C76; /* Now passing WCAG AAA for #fff, AA for #d9dcd6 */
     --c-secondary: #0072bb;
-    --c-tertiary: #18597B;
+    --c-tertiary: #107db5; /* New color passes WCAG AA for both #fff and #000 */
     --c-accent: #d9dcd6;
     --c-white: #ffffff;
+
+    /* Brand Fonts */
+    --f-primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --f-alt-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -15,13 +20,17 @@
 
 body {
     background-color: var(--c-accent);
+    font-family: var(--f-alt-font-family);
 }
 
-.header {
+header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--c-primary); /* Now passing WCAG AAA for #fff, AA for #d9dcd6 */
+    background-color: var(--c-primary); 
     color: var(--c-white);
+}
+
+header, footer {
+    font-family: var(--f-alt-font-family);
 }
 
 .header h1 {
@@ -29,15 +38,12 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: var(--c-accent);
-}
+
 
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
@@ -91,8 +97,7 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--c-tertiary); /* Now passing WCAG AA, AAA */
+    background-color: var(--c-tertiary);
 }
 
 .benefit-lead {
@@ -147,7 +152,6 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--c-secondary);
     color: var(--c-white);
 }
@@ -156,7 +160,6 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--c-secondary);
     color: var(--c-white);
 }
@@ -165,7 +168,6 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--c-secondary);
     color: var(--c-white);
 }
@@ -200,10 +202,13 @@ p {
 .footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
 .footer h2 {
     font-size: 20px;
+}
+
+.c-accent {
+    color: var(--c-accent);
 }
