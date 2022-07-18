@@ -1,3 +1,12 @@
+:root {
+    --c-primary: #285C76;
+    --c-secondary: #0072bb;
+    --c-tertiary: #18597B;
+    --c-accent: #d9dcd6;
+    --c-white: #ffffff;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,14 +14,14 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: var(--c-accent);
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--c-primary); /* Now passing WCAG AAA for #fff, AA for #d9dcd6 */
+    color: var(--c-white);
 }
 
 .header h1 {
@@ -21,7 +30,7 @@ body {
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: var(--c-accent);
 }
 
 .header div {
@@ -42,7 +51,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: var(--c-white);
     text-decoration: none;
 }
 
@@ -83,22 +92,22 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd; /* To be fixed - Insufficient Color Contrast with white text */
+    background-color: var(--c-tertiary); /* Now passing WCAG AA, AAA */
 }
 
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--c-white);
 }
 
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--c-white);
 }
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--c-white);
 }
 
 .benefit-lead h3 {
@@ -139,8 +148,8 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--c-secondary);
+    color: var(--c-white);
 }
 
 .online-reputation-management {
@@ -148,8 +157,8 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--c-secondary);
+    color: var(--c-white);
 }
 
 .social-media-marketing {
@@ -157,8 +166,8 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--c-secondary);
+    color: var(--c-white);
 }
 
 .search-engine-optimization img {
