@@ -1,9 +1,9 @@
 /*** CSS Custom Properties ***/
 :root {
     /* Brand Colors */
-    --c-primary: #285C76; /* Now passing WCAG AAA for #fff, AA for #d9dcd6 */
+    --c-primary: #285C76;
     --c-secondary: #0072bb;
-    --c-tertiary: #107db5; /* New color passes WCAG AA for both #fff and #000 */
+    --c-tertiary: #107db5;
     --c-accent: #d9dcd6;
     --c-white: #ffffff;
     --c-black: #000000;
@@ -13,7 +13,7 @@
     --f-alt-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*** Basic ***/
+/*** Default Styles ***/
 
 * {
     box-sizing: border-box;
@@ -26,6 +26,11 @@ body {
     color: var(--c-white);
     background-color: var(--c-accent);
 }
+
+.c-accent {
+    color: var(--c-accent);
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -34,9 +39,6 @@ body {
 .float-right {
     float: right;
     margin-left: 25px;
-}
-.c-accent {
-    color: var(--c-accent);
 }
 
 /*  Text */
@@ -60,13 +62,13 @@ h4 {
     font-size: 20px;
 }
 
+p {
+    font-size: 16px;
+}
+
 a {
     color: var(--c-white);
     text-decoration: none;
-}
-
-p {
-    font-size: 16px;
 }
 
 /*** Navigation (Header/Footer) ***/
