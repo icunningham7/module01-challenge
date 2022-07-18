@@ -95,7 +95,7 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -105,42 +105,18 @@ p {
     background-color: var(--c-tertiary);
 }
 
-.benefit-lead {
+aside .benefit {
     margin-bottom: 32px;
     color: var(--c-white);
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: var(--c-white);
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: var(--c-white);
-}
-
-
-
-.benefit-lead img {
+aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.content section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -148,35 +124,9 @@ p {
     color: var(--c-white);
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: var(--c-secondary);
-    color: var(--c-white);
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: var(--c-secondary);
-    color: var(--c-white);
-}
-
-.search-engine-optimization img {
+section img {
     max-height: 200px;
 }
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-
 
 .footer {
     padding: 30px;
