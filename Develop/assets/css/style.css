@@ -1,3 +1,4 @@
+/*** CSS Custom Properties ***/
 :root {
     /* Brand Colors */
     --c-primary: #285C76; /* Now passing WCAG AAA for #fff, AA for #d9dcd6 */
@@ -5,46 +6,40 @@
     --c-tertiary: #107db5; /* New color passes WCAG AA for both #fff and #000 */
     --c-accent: #d9dcd6;
     --c-white: #ffffff;
+    --c-black: #000000;
 
     /* Brand Fonts */
     --f-primary-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --f-alt-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*** Basic ***/
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--f-alt-font-family);
 }
 
 body {
-    background-color: var(--c-accent);
-    font-family: var(--f-alt-font-family);
-}
-
-header {
-    padding: 20px;
-    background-color: var(--c-primary); 
     color: var(--c-white);
+    background-color: var(--c-accent);
+}
+.float-left {
+    float: left;
+    margin-right: 25px;
 }
 
-header, footer {
-    font-family: var(--f-alt-font-family);
-}
-
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
+.float-right {
     float: right;
-    font-size: 20px;
-    list-style-type: none;
-}
-
-nav li {
-    display: inline-block;
     margin-left: 25px;
 }
+.c-accent {
+    color: var(--c-accent);
+}
+
+/*  Text */
 
 h1 {
     display: inline-block;
@@ -74,27 +69,65 @@ p {
     font-size: 16px;
 }
 
+/*** Navigation (Header/Footer) ***/
+
+header {
+    padding: 20px;
+    background-color: var(--c-primary); 
+
+}
+
+.footer {
+    color: var(--c-black);
+    padding: 30px;
+    clear: both;
+    text-align: center;
+}
+
+header, footer {
+    font-family: var(--f-primary-font-family);
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*** Body ***/
+
+/* Hero */
 .hero {
     width: 100%;
     margin-bottom: 25px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* Body Content */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+.content section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: var(--c-secondary);
+}
+
+.content section img {
+    max-height: 200px;
+}
+
+/* Body Aside */
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -107,35 +140,10 @@ aside {
 
 aside .benefit {
     margin-bottom: 32px;
-    color: var(--c-white);
 }
 
 aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-.content section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: var(--c-secondary);
-    color: var(--c-white);
-}
-
-section img {
-    max-height: 200px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    text-align: center;
-}
-
-
-
-.c-accent {
-    color: var(--c-accent);
 }
